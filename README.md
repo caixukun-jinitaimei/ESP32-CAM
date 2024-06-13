@@ -281,7 +281,8 @@
 
 #### 将GND与IO0断开，打开右上角的Serial Monitor，选择115200baud波段，按一下ESP32—CAM开发板上的RST复位键，显示IP地址和相应端口，如下图，TCP Server后面就是IP地址，将其记住。
 
-![alt text](image-5.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/f8f45121-0816-475b-90b1-97de7207bd30)
+
 
 ## 四、在Android studio上代码实现
 
