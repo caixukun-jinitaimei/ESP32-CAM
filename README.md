@@ -54,7 +54,8 @@
 
 #### USB转TTL连上电脑，将开发板IO0与GND短接，打开电脑的设备管理器，端口中有CH340，则说明设备连接成功。
 
-![alt text](image-4.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/eb703fc2-6bb2-4506-93ac-03a081d03f5b)
+
 
 #### 3.Arduino代码示例
 
