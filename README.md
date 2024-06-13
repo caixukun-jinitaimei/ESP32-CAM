@@ -40,7 +40,8 @@
 
 #### 用杜邦线将ESP32-CAM的5V、GND、U0T、U0R分别连上USB转TTL设备的5V、GND、RXD、TXD，其中输入电源一定要至少5V 2A，否则视频会出现水纹。另外再用杜邦线将ESP32-CAM的GND与IO0短接，否则后期代码烧录会失败。
 
-![alt text](image-3.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/bcd6f12e-59a1-45c5-b2f2-367347d5f2c0)
+
 
 
 ## 三、 Ar duino获取视频IP地址以及端口
