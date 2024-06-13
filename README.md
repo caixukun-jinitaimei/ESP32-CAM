@@ -32,7 +32,8 @@
 
 #### 这里ESP32-CAM开发板到货后，注意摄像头插槽的使用，可以看下图，将开发板黑色小插槽上翻，刚好压住摄像头元件，正常情况下摄像头是不会脱落的。
 
-![alt text](image-2.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/4983346c-cf5e-44f4-85fc-418a01354524)
+
 
 
 ## 二、设备接线
