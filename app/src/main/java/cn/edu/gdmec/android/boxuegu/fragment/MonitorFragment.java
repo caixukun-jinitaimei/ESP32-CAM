@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import android.support.v4.app.FragmentActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -54,42 +53,55 @@ public class MonitorFragment extends Fragment {
         myHandler = new MyHandler();
 
         connect_button.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                if(connect_button.getText() == "连接"){
+                if (connect_button.getText().toString().equals("连接")) {
+                    final String host = host_editText.getText().toString();
+                    final String portStr = port_editText.getText().toString();
+                    if (host.isEmpty() || portStr.isEmpty()) {
+                        Toast.makeText(getActivity(), "请输入有效的服务器地址和端口号", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    int port;
+                    try {
+                        port = Integer.parseInt(portStr);
+                    } catch (NumberFormatException e) {
+                        Toast.makeText(getActivity(), "端口号格式错误", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    final int finalPort = port;
+
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             Message msg = myHandler.obtainMessage();
                             try {
-                                //如果 host_editText  port_editText为空的话 点击连接 会退出程序
-                                socket = new Socket((host_editText.getText()).toString(),Integer.valueOf(port_editText.getText().toString()));
-                                //socket = new Socket("192.168.0.3",8080);
-                                if(socket.isConnected()){
-                                    msg.what = 0;//显示连接服务器成功信息
+                                socket = new Socket(host, finalPort);
+                                if (socket.isConnected()) {
+                                    msg.what = 0; // 显示连接服务器成功信息
                                     inputStream = socket.getInputStream();
                                     outputStream = socket.getOutputStream();
-                                    Recv();//接收数据
-                                }else{
-                                    msg.what = 1;//显示连接服务器失败信息
+                                    Recv(); // 接收数据
+                                } else {
+                                    msg.what = 1; // 显示连接服务器失败信息
                                 }
                             } catch (IOException e) {
                                 e.printStackTrace();
-                                msg.what = 1;//显示连接服务器失败信息
+                                msg.what = 1; // 显示连接服务器失败信息
                             }
                             myHandler.sendMessage(msg);
                         }
                     }).start();
-                }else{
-//                    关闭socket连接
+                } else {
+                    // 关闭socket连接
                     try { socket.close(); } catch (IOException e) { e.printStackTrace(); }
-                    try { inputStream.close(); }catch (IOException e) { e.printStackTrace(); }
-                    try { outputStream.close(); }catch (IOException e) { e.printStackTrace(); }
+                    try { inputStream.close(); } catch (IOException e) { e.printStackTrace(); }
+                    try { outputStream.close(); } catch (IOException e) { e.printStackTrace(); }
                     connect_button.setText("连接");
                 }
             }
         });
+
 
         send.setOnClickListener(new View.OnClickListener() {
 

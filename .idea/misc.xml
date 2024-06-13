@@ -27,6 +27,13 @@
         <entry key="..\:/Boxuegu-master/app/src/main/res/layout/main_title_bar.xml" value="0.109375" />
         <entry key="..\:/Boxuegu-master/app/src/main/res/layout/play_history_list_item.xml" value="0.109375" />
         <entry key="..\:/Boxuegu-master/app/src/main/res/layout/video_list_item.xml" value="0.109375" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/activity_change_user_info.xml" value="0.11195542046605876" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/activity_exercises_detail.xml" value="0.11195542046605876" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/activity_find_psw.xml" value="0.11195542046605876" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/activity_login.xml" value="0.11195542046605876" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/activity_register.xml" value="0.11018518518518519" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/fragment_monitor.xml" value="0.16799999999999998" />
+        <entry key="..\:/eduedu-master/app/src/main/res/layout/video_list_item.xml" value="0.11195542046605876" />
       </map>
     </option>
   </component>
