@@ -288,7 +288,8 @@
 
 #### 编写Android studio代码，将每一帧视频的图片导入监控页面上，输入在arduino中成功连接的IP地址和端口号。连接以后结果如下，即可将摄像头采集到的视频导入到你想做的app上了。
 
-![alt text](image-6.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/d3b70f0e-a346-40a7-8608-6cb5beaed1ba)
+
 
 #### 代码链接：https://github.com/caixukun-jinitaimei/ESP32-CAM
 
