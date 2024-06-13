@@ -26,7 +26,7 @@
 
 #### 本人于淘宝和pdd上购买，截图如下： 
 
-![alt text](image.png)            ![alt text](image-1.png)
+![image](https://github.com/caixukun-jinitaimei/ESP32-CAM/assets/127214278/fca02237-dbb0-463a-98bd-1d64e5fa61e4)   ![alt text](image-1.png)
 
 
 #### 这里ESP32-CAM开发板到货后，注意摄像头插槽的使用，可以看下图，将开发板黑色小插槽上翻，刚好压住摄像头元件，正常情况下摄像头是不会脱落的。
